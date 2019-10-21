@@ -1,27 +1,52 @@
-#startGameBtn{
-    
+::before, ::after {
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-    
-#side-panel{
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: salmon;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.main-panel{}
 
-#startGame{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: red;
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(208, 223, 221);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
 }
+.btn-grid{
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn{
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+.btn:hover{
+    border-color: black;
+}
+#controls{
 
+    justify-content: center;
+    display: grid;
+}
+#header{
+    justify-content: center;
+    display: flex;
+}
+#background{
     
-            
+}
+.hide{
+    display: none;
+}
