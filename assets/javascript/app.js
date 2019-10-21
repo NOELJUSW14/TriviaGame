@@ -166,11 +166,9 @@ let setNextQuestion = function(){
             console.log($(this).attr('data-correct'))
             if($(this).attr('data-correct') === "true"){
                 correctCount++
-                $('#right') = correctCount
             } else{
                 console.log('wrong')
                 wrongCount++
-                $('#wrong') = wrongCount
             }
             clearInterval(intervalId)
             questionsIndex++
