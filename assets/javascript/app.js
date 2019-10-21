@@ -165,9 +165,12 @@ let setNextQuestion = function(){
         $('<button>').text(answerObject.text).addClass("btn").attr("data-correct",answerObject.correct).appendTo('#answer-buttons').on('click',function(){
             console.log($(this).attr('data-correct'))
             if($(this).attr('data-correct') === "true"){
-                console.log('right')
+                correctCount++
+                $('#right') = correctCount
             } else{
                 console.log('wrong')
+                wrongCount++
+                $('#wrong') = wrongCount
             }
             clearInterval(intervalId)
             questionsIndex++
